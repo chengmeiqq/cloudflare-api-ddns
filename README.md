@@ -8,10 +8,11 @@
      
 备注： 关于第一点限制说明，执行脚本的主机必须有公网ip，这样就可以不受第三方接口的限制，比如接口频率限制，响应时间不稳定等，直接本机获取公网ip  
 
-# 用法
+# 用法：
      1.上传文件到：/usr/local/bin/cf-ddns.sh  
      2.给权限：chmod +x /usr/local/bin/cf-ddns.sh  
-     3.修改配置文件：
+     3.修改配置文件：修改4个地方
+     4.测试 
 
 
 # 申请Cloudflare Global API Key  申请地址https://dash.cloudflare.com/profile/api-tokens
