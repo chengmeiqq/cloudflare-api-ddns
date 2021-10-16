@@ -15,7 +15,8 @@
      3.给权限：chmod +x /usr/local/bin/cf-ddns.sh  
      4.修改配置文件#号里面
      5.测试执行 bash cf-ddns.sh
-     6.添加开机自动定时任务 */30 * * * * /usr/local/bin/cf-ddns.sh
+     6.添加开机自动定时任务/etc/crontab 加到最下
+     */1 * * * * /usr/local/bin/cf-ddns.sh >> /var/log/cf-ddns.log 2>&1
 
 ####################################################################
 # 申请Cloudflare Global API Key  申请地址https://dash.cloudflare.com/profile/api-tokens
