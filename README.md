@@ -7,12 +7,6 @@
      3、因为用到了source命令，所以需要用bash执行环境，而不是sh  
      
 备注： 关于第一点限制说明，执行脚本的主机必须有公网ip，这样就可以不受第三方接口的限制，比如接口频率限制，响应时间不稳定等，直接本机获取公网ip  
-  
-安装 net-tools  
-  
-```
-apt-get install net-tools 
-```
-
+ 
 B站视频介绍 https://www.bilibili.com/video/BV1A5411A7DR/  
 油管视频介绍 https://www.youtube.com/watch?v=3XmMTWJI8XE   
