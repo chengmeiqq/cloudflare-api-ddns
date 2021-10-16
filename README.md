@@ -16,7 +16,7 @@
      4.修改配置文件 #号里面
      5.测试 
 
-##################################################################################################################################
+####################################################################
 # 申请Cloudflare Global API Key  申请地址https://dash.cloudflare.com/profile/api-tokens
 CFKEY=1b7f1601e22b7cbd39252333f4afe3e5c0050
 
@@ -29,7 +29,7 @@ CFZONE_NAME=jjzz.org
 # 二级域名, eg: homeserver.example.com
 CFRECORD_NAME=dip.jjzz.org
 
-修改网卡地址：
+# 修改网卡地址：
 
 执行命令 ifconfig 找到自己的IP网卡跟换：
 
@@ -61,8 +61,7 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
   
 修改后：第95行：WAN_IP=`/usr/sbin/ifconfig |sed -n '/^eth.*/{s/^\([^ ]*\) .*/\1/g;h;: top;n;/^$/b;s/^ \{1,\}inet \(.*\)  netmask.*/\1/g;p}'`
 
-##################################################################################################################################
-
+####################################################################
  
 B站视频介绍 https://www.bilibili.com/video/BV1A5411A7DR/  
 油管视频介绍 https://www.youtube.com/watch?v=3XmMTWJI8XE   
