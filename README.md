@@ -14,19 +14,19 @@
 2.给权限：chmod +x /usr/local/bin/cf-ddns.sh
 3.修改配置文件：
 
-##################################################################################################################################
-# 申请Cloudflare Global API Key  申请地址https://dash.cloudflare.com/profile/api-tokens			#		
-CFKEY=1b7f1601e22b7cbd39252333f4afe3e5c0050											 #												
-																 #																	
-# Cloudflare 用户账号 邮箱		   #											
-CFUSER=1051239893@qq.com		     #														
-																 #																	
-# 域名, eg: example.com					 #										    
-CFZONE_NAME=jjzz.org						 #														
-																 #																	
-# 完整域名, eg: homeserver.example.com										 #											
-CFRECORD_NAME=dip.jjzz.org													 #														
-																 #																	
+
+# 申请Cloudflare Global API Key  申请地址https://dash.cloudflare.com/profile/api-tokens
+CFKEY=1b7f1601e22b7cbd39252333f4afe3e5c0050
+
+# Cloudflare 用户账号 邮箱		  											
+CFUSER=1051239893@qq.com		   												
+
+# 域名, eg: example.com	
+CFZONE_NAME=jjzz.org
+
+# 二级域名, eg: homeserver.example.com
+CFRECORD_NAME=dip.jjzz.org
+
 ##################################################################################################################################
 
  
