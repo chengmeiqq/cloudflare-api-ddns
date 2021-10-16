@@ -56,10 +56,12 @@ CFRECORD_NAME=dip.jjzz.org
              TX packets 68  bytes 5912 (5.7 KiB)
              TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
-修改PPP改成eth 
-修改前：第95行：WAN_IP=`/usr/sbin/ifconfig |sed -n '/^ppp.*/{s/^\([^ ]*\) .*/\1/g;h;: top;n;/^$/b;s/^ \{1,\}inet \(.*\)  netmask.*/\1/g;p}'`
+     修改PPP改成eth 
+     修改前：第95行：
+     WAN_IP=`/usr/sbin/ifconfig |sed -n '/^ppp.*/{s/^\([^ ]*\) .*/\1/g;h;: top;n;/^$/b;s/^ \{1,\}inet \(.*\)  netmask.*/\1/g;p}'`
   
-修改后：第95行：WAN_IP=`/usr/sbin/ifconfig |sed -n '/^eth.*/{s/^\([^ ]*\) .*/\1/g;h;: top;n;/^$/b;s/^ \{1,\}inet \(.*\)  netmask.*/\1/g;p}'`
+     修改后：第95行：
+     WAN_IP=`/usr/sbin/ifconfig |sed -n '/^eth.*/{s/^\([^ ]*\) .*/\1/g;h;: top;n;/^$/b;s/^ \{1,\}inet \(.*\)  netmask.*/\1/g;p}'`
 
 ####################################################################
  
