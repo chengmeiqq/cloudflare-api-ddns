@@ -35,26 +35,26 @@ CFRECORD_NAME=dip.jjzz.org
 
 比如我的是：我的IP网卡是eth0
 
-[root@localhost ~]# ifconfig
-eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 192.168.1.199  netmask 255.255.255.0  broadcast 192.168.1.255
-        inet6 fe80::fd99:a04:a9a2:4401  prefixlen 64  scopeid 0x20<link>
-        inet6 fd3d:4853:8fb1::3b5  prefixlen 128  scopeid 0x0<global>
-        inet6 fd3d:4853:8fb1:0:c87e:d4eb:627a:bf0c  prefixlen 64  scopeid 0x0<global>
-        ether 52:54:00:3e:41:25  txqueuelen 1000  (Ethernet)
-        RX packets 64504  bytes 21032593 (20.0 MiB)
-        RX errors 0  dropped 1133  overruns 0  frame 0
-        TX packets 72304  bytes 10454642 (9.9 MiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+     [root@localhost ~]# ifconfig
+     eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+             inet 192.168.1.199  netmask 255.255.255.0  broadcast 192.168.1.255
+             inet6 fe80::fd99:a04:a9a2:4401  prefixlen 64  scopeid 0x20<link>
+             inet6 fd3d:4853:8fb1::3b5  prefixlen 128  scopeid 0x0<global>
+             inet6 fd3d:4853:8fb1:0:c87e:d4eb:627a:bf0c  prefixlen 64  scopeid 0x0<global>
+             ether 52:54:00:3e:41:25  txqueuelen 1000  (Ethernet)
+             RX packets 64504  bytes 21032593 (20.0 MiB)
+             RX errors 0  dropped 1133  overruns 0  frame 0
+             TX packets 72304  bytes 10454642 (9.9 MiB)
+             TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
-lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
-        inet 127.0.0.1  netmask 255.0.0.0
-        inet6 ::1  prefixlen 128  scopeid 0x10<host>
-        loop  txqueuelen 1000  (Local Loopback)
-        RX packets 68  bytes 5912 (5.7 KiB)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 68  bytes 5912 (5.7 KiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+     lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+             inet 127.0.0.1  netmask 255.0.0.0
+             inet6 ::1  prefixlen 128  scopeid 0x10<host>
+             loop  txqueuelen 1000  (Local Loopback)
+             RX packets 68  bytes 5912 (5.7 KiB)
+             RX errors 0  dropped 0  overruns 0  frame 0
+             TX packets 68  bytes 5912 (5.7 KiB)
+             TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 修改PPP改成eth 
 修改前：第95行：WAN_IP=`/usr/sbin/ifconfig |sed -n '/^ppp.*/{s/^\([^ ]*\) .*/\1/g;h;: top;n;/^$/b;s/^ \{1,\}inet \(.*\)  netmask.*/\1/g;p}'`
